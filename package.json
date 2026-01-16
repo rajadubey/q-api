@@ -2,9 +2,16 @@
   "name": "q-api",
   "version": "1.0.0",
   "description": "Lightweight, TypeScript-ready API client with interceptors, retry, token refresh, and abort support",
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.esm.js",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
   "files": [
     "dist"
   ],

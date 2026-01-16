@@ -214,6 +214,39 @@ controller.abort();
 - `addErrorInterceptor(fn)`
 - `setRefreshTokenHandler(fn)`
 
+## 🤝 Contributing
+
+Contributions are welcome! Please follow these steps to contribute:
+
+1.  **Fork the repository** on GitHub.
+2.  **Clone your fork**:
+    ```bash
+    git clone https://github.com/your-username/q-api.git
+    cd q-api
+    ```
+3.  **Install dependencies**:
+    ```bash
+    pnpm install
+    ```
+4.  **Create a new branch**:
+    ```bash
+    git checkout -b feature/my-new-feature
+    ```
+5.  **Make your changes** and write tests.
+6.  **Run tests** to ensure everything is working:
+    ```bash
+    pnpm test
+    ```
+7.  **Lint and format** your code:
+    ```bash
+    pnpm run lint
+    pnpm run format
+    ```
+8.  **Commit your changes** and push to your fork.
+9.  **Submit a Pull Request**!
+
+Please ensure your code follows the project's coding style and includes appropriate tests.
+
 ## 📄 License
 
 MIT © [Raja Dubey](https://github.com/rajadubey)
