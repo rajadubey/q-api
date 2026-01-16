@@ -1,6 +1,6 @@
 {
   "name": "q-api",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Lightweight, TypeScript-ready API client with interceptors, retry, token refresh, and abort support",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
