@@ -1,3 +1,22 @@
+/**
+ * Uploads files using XMLHttpRequest for progress tracking.
+ *
+ * @template T - The expected response type.
+ * @param {string} url - The URL to upload to.
+ * @param {File[]} files - The list of files to upload.
+ * @param {Object} [options] - Upload options.
+ * @param {Record<string, string>} [options.headers] - Additional request headers.
+ * @param {AbortSignal} [options.signal] - Signal to abort the upload.
+ * @param {(p: number) => void} [options.onProgress] - Callback for upload progress (0-100).
+ * @returns {Promise<T>} A promise that resolves with the response data.
+ *
+ * @example
+ * ```ts
+ * const response = await upload<UploadResult>('/api/upload', fileList, {
+ *   onProgress: (percent) => console.log(`Upload: ${percent}%`)
+ * });
+ * ```
+ */
 export function upload<T>(
   url: string,
   files: File[],

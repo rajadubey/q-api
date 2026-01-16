@@ -3,6 +3,21 @@ import { refreshToken } from './refresh.js';
 import { retry } from './retry.js';
 import type { HttpMethod, RequestOptions } from './types.js';
 
+/**
+ * Sends an HTTP request.
+ *
+ * @template T - The expected response type.
+ * @param {HttpMethod} method - The HTTP method to use (e.g., 'GET', 'POST').
+ * @param {string} url - The URL to request.
+ * @param {RequestOptions} [options={}] - Request configuration options.
+ * @param {unknown} [body] - Optional request body.
+ * @returns {Promise<T>} A promise that resolves with the response data.
+ *
+ * @example
+ * ```ts
+ * const data = await sendRequest<MyData>('GET', '/api/data', { retries: 3 });
+ * ```
+ */
 export async function sendRequest<T>(
     method: HttpMethod,
     url: string,
