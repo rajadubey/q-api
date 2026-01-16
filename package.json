@@ -1,0 +1,43 @@
+{
+  "name": "q-api",
+  "version": "1.0.0",
+  "description": "Lightweight, TypeScript-ready API client with interceptors, retry, token refresh, and abort support",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup src/index.ts --watch",
+    "lint": "biome check .",
+    "lint:fix": "biome check --write .",
+    "format": "biome format --write .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepare": "pnpm run build"
+  },
+  "keywords": [
+    "api-client",
+    "typescript",
+    "fetch",
+    "interceptors",
+    "retry",
+    "abort",
+    "lightweight"
+  ],
+  "author": "Raja Dubey",
+  "license": "MIT",
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "happy-dom": "^20.3.1",
+    "tsup": "^7.0.0",
+    "typescript": "^5.1.6",
+    "vitest": "^4.0.17"
+  },
+  "packageManager": "pnpm@10.28.0",
+  "engines": {
+    "node": ">=24"
+  }
+}
